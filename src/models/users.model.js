@@ -26,6 +26,8 @@ const userSchema = new mongoose.Schema(
   },
 );
 
+//Note Use Pre hook here for hashing the password as it will look more professional.
+
 const User = mongoose.model("authorInfo", userSchema);
 
 export default User;
