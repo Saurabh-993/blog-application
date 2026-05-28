@@ -1,2 +1,5 @@
 node_modules
 .env
+# these are mine personal files
+practice.multer.js
+views.multer.ejs

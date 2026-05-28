@@ -19,6 +19,10 @@ This is a full blog application built using React, Node.js, Express, and MongoDB
 - Database: MongoDB
 - Authentication: JWT (JSON Web Tokens), argon2 for password hashing, and cookie-parser for handling cookies.
 
+# Structure
+   - Backend: Contains the server-side code, including routes, controllers, models, and middleware.
+   - Frontend: Contains the client-side code, Ejs pages, styles, and assets.
+
 # Installation
 1. Clone the repository:
 ```
