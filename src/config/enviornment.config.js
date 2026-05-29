@@ -9,3 +9,6 @@ const __dirname = dirname(__filename);
 //through these path resolution we resolved the whole paths and finally our .env variable are ready to be injected.
 
 dotenv.config({ path: path.resolve(__dirname, "../../.env") });
+
+export let connection_string = process.env.DB_CONNECTION_STRING;
+
