@@ -3,7 +3,7 @@
 
 This is a full blog application built using React, Node.js, Express, and MongoDB. It allows users to create, read, update, and delete blog posts. The application also includes user authentication and authorization features.
 
-# Features
+# Technical Specialities 
 - User registration and login.
 - Create, read, update, and delete blog posts.
 - User authentication and authorization.
@@ -12,6 +12,16 @@ This is a full blog application built using React, Node.js, Express, and MongoDB
 - Secure password hashing and token-based authentication.
 - Error handling and validation for user input.
 - Separation of concerns (SoC) in the codebase for better maintainability.
+
+# Features
+- User Registration: Users can create an account by providing their username, email, and password.
+- User Login: Registered users can log in to their accounts using their email and password.
+- Create Blog Post: Authenticated users can create new blog posts by providing a title, content, and an optional profile & banner image.
+- Read Blog Posts: All users can view a list of blog posts and read individual posts in detail.
+- Update Blog Post: Authenticated users can edit their own blog posts.
+- Delete Blog Post: Authenticated users can delete their own blog posts.
+- User Profile: Users can view and update their profile information, including their profile picture.
+- User can like or upvote a blog post.
 
 # Technologies Used
 - Frontend: EJs, HTML, CSS, JavaScript , Tailwind CSS for styling, and Figma for design, fetch API for making HTTP requests, and DOM manipulation for dynamic content updates.
