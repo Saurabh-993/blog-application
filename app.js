@@ -1,11 +1,14 @@
 import express from "express";
 import mongoose from "mongoose";
 import helmet from "helmet";
-import app, { appStart } from "./src/server.js";
+import appStart from "./src/server.js";
 import ConnectDB from "./src/config/connection.DB.js";
 import path, { dirname } from "path";
 import { fileURLToPath } from "url";
 import cookieParser from "cookie-parser";
+
+export const app = express();
+
 helmet();
 ConnectDB(); //will establish the connection with the mongoDB
 
