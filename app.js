@@ -5,11 +5,13 @@ import app, { appStart } from "./src/server.js";
 import ConnectDB from "./src/config/connection.DB.js";
 import path, { dirname } from "path";
 import { fileURLToPath } from "url";
+import cookieParser from "cookie-parser";
 helmet();
 ConnectDB(); //will establish the connection with the mongoDB
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 let _filename = fileURLToPath(import.meta.url);
 let _dirname = dirname(_filename);
@@ -17,5 +19,7 @@ let _dirname = dirname(_filename);
 app.set("view engine", "ejs");
 app.use(express.static(path.join(_dirname, "src", "Public")));
 app.set("views", path.join(_dirname, "src", "views"));
+
+
 
 appStart(); //To run the server
