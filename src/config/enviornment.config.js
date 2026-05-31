@@ -11,4 +11,5 @@ const __dirname = dirname(__filename);
 dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 
 export let connection_string = process.env.DB_CONNECTION_STRING;
+export let PORT = process.env.PORT ;
 
