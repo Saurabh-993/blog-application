@@ -24,5 +24,19 @@ app.use(express.static(path.join(_dirname, "src", "Public")));
 app.set("views", path.join(_dirname, "src", "views"));
 
 
+appStart();
 
-appStart(); //To run the server
+// //To run the server
+
+// How to use slugify
+// import slugify from "slugify";
+
+// const title = "Hello World! JavaScript Guide";
+// const slug = slugify(title, {
+//   lower: true,      // lowercase
+//   strict: true,     // special chars remove
+//   trim: true
+// });
+
+// console.log(slug);
+// // hello-world-javascript-guide
