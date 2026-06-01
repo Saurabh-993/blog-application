@@ -12,6 +12,7 @@ This is a full blog application built using React, Node.js, Express, and MongoDB
 - Secure password hashing and token-based authentication.
 - Error handling and validation for user input.
 - Separation of concerns (SoC) in the codebase for better maintainability.
+- slugifying blog post titles for SEO-friendly URLs.
 
 # Features
 - User Registration: Users can create an account by providing their username, email, and password.
@@ -25,7 +26,7 @@ This is a full blog application built using React, Node.js, Express, and MongoDB
 
 # Technologies Used
 - Frontend: EJs, HTML, CSS, JavaScript , Tailwind CSS for styling, and Figma for design, fetch API for making HTTP requests, and DOM manipulation for dynamic content updates.
-- Backend: Node.js, Express , Multer for file uploads, and nodemon for development.
+- Backend: Node.js, Express , Multer for file uploads, slugify for creating slugifying URLs and nodemon for development.
 - Database: MongoDB
 - Authentication: JWT (JSON Web Tokens), argon2 for password hashing, and cookie-parser for handling cookies.
 
