@@ -26,7 +26,9 @@ const userSchema = new mongoose.Schema(
   },
 );
 
-//Note Use Pre hook here for hashing the password as it will look more professional.
+userSchema.pre("save",(password)=>{
+    // so we will be hashing password here 
+});
 
 const User = mongoose.model("authorInfo", userSchema);
 
