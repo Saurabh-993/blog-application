@@ -35,28 +35,38 @@ This is a full blog application built using React, Node.js, Express, and MongoDB
    - Frontend: Contains the client-side code, Ejs pages, styles, and assets.
 
 # Installation
-1. Clone the repository:
+
+## Clone the repository
+
+```bash
+git clone https://github.com/yourusername/full-blog-application.git
+cd full-blog-application
 ```
-   git clone https://github.com/yourusername/full-blog-application.git 
 
-2. Navigate to the project directory:
-   cd full-blog-application     
+## Install Backend Dependencies
 
-3. Install dependencies for the backend:
-   npm install  
+```bash
+npm install
+```
 
-4. Install dependencies for the frontend:
-   cd client
+## Install Frontend Dependencies
 
-   npm install
+```bash
+cd client
+npm install
+```
 
-5. Start the backend server:
-   npm start
+## Run Backend Server
 
-6. Start the frontend development server:
-   cd client
+```bash
+npm start
+```
 
-    npm start
+## Run Frontend Server
+
+```bash
+cd client
+npm start
 ```
 
 # Usage
