@@ -6,9 +6,21 @@ const postSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    author: {
+    author_ID: {
       type: Schema.Types.ObjectId,
       ref: "User",
+    },
+    title: {
+      type: String,
+      required: [true, "Title is required!"],
+    },
+    likes_count: {
+      type: Number,
+      default: 0,
+    },
+    post_content: {
+      type: String,
+      required: [true, "Post can't be blank"],
     },
   },
   {

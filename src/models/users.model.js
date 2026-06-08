@@ -2,9 +2,9 @@ import mongoose, { Schema } from "mongoose";
 
 const userSchema = new mongoose.Schema(
   {
-    name: {
+    username: {
       type: String,
-      required: [true, "Please provide a name"],
+      required: [true, "Please provide a username"],
     },
     email: {
       type: String,
@@ -15,7 +15,7 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: [true, "Password is required"],
     },
-    posts: {
+    likes_posts: {
       type: [Schema.Types.ObjectId],
       ref: "blogPost",
     },
@@ -26,8 +26,8 @@ const userSchema = new mongoose.Schema(
   },
 );
 
-userSchema.pre("save",(password)=>{
-    // so we will be hashing password here 
+userSchema.pre("save", (password) => {
+  // so we will be hashing password here
 });
 
 const User = mongoose.model("authorInfo", userSchema);
