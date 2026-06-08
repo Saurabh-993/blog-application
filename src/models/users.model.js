@@ -1,4 +1,5 @@
 import mongoose, { Schema } from "mongoose";
+import { passwordHasher } from "../utilities/password_hasher.js";
 
 const userSchema = new mongoose.Schema(
   {
@@ -26,8 +27,18 @@ const userSchema = new mongoose.Schema(
   },
 );
 
-userSchema.pre("save", (password) => {
-  // so we will be hashing password here
+userSchema.pre("save", async (next) => {
+  // Password tabhi hash karo jab password modify hua ho
+  if (!this.isModified("password")) {
+    return next();
+  }
+  // we will continue this thing again.
+  try {
+    this.password = passwordHasher(password);
+
+  } catch (error) {
+    next(error);
+  }
 });
 
 const User = mongoose.model("authorInfo", userSchema);
